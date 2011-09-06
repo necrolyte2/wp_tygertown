@@ -31,6 +31,10 @@ h2 {
 a {
 	color: inherit;
 }
+
+* {
+	position: relative;
+}
 .debug {
 	border: 1px solid white;
 }
@@ -43,10 +47,21 @@ a {
 .contentBackground {
 }
 
+/* Contains #posts & #sidebar */
+#content {
+}
+
 #header {
 	height: 100px;
 	margin-bottom: 10px;
 	background-color: #000;
+}
+
+#footer {
+	float: left;
+	border-top: 1px solid white;
+	width: 100%;
+	text-align: center;
 }
 
 #header-left {
@@ -62,7 +77,6 @@ a {
 #header-right {
 	height: 100px;
 	float: right;
-	margin-right: 50px;
 }
 
 #header-text {
@@ -96,7 +110,7 @@ a {
 #social-images {
 	height: 100px;
 	width: 100%;
-	padding: 33px 0px 0px 0px;
+	padding: 15px 0px 0px 0px;
 }
 
 #social-images img {
@@ -215,21 +229,30 @@ a img.aligncenter {
 
 /* =WordPress Post
 -------------------------------------------------------------- */
+/* Posts container */
+#posts {
+	width: 75%;
+	float: left;
+}
+
 /* Post Title */
 .post .post-head {
-	height: 22pt;
+	height: 28pt;
+	border-bottom: 1px dotted #999;
 }
 
 .post .post-head h2 {
 	float: left;
+	color: white;
+	font-size: 24pt;
+	font-family: arial;
+	letter-spacing: .05em;
+	font-weight: normal;
 }
 
 .post .post-head h2 a {
 	color: white;
-	font-size: 20pt;
-	font-family: arial;
-	letter-spacing: .05em;
-	font-weight: normal;
+	text-decoration: none;
 }
 
 .post a {
@@ -293,4 +316,28 @@ a img.aligncenter {
 .bypostauthor {
 	background-color: #555;
 	border: 3px solid white;
+}
+
+
+/* =Sidebar Right
+-------------------------------------------------------------- */
+#sidebar-right {
+	-webkit-margin-after: 0px;
+	-webkit-margin-before: 0px;
+	-webkit-padding-start: 0px;
+}
+.sidebar-right {
+	float: right;
+	width: 24%;
+}
+
+.sidebar-right li {
+	list-style-type: none;
+}
+
+.sidebar-right .widget {
+	margin: 0px 0px 10px 0px;
+	padding: 10px 5px 5px 10px;
+	background-color: #445;
+	border: 1px solid white;
 }

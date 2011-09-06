@@ -28,3 +28,7 @@ function mytheme_comment($comment, $args, $depth) {
 <?php
         }
 ?>
+<?php
+if ( function_exists('register_sidebar') )
+    register_sidebar();
+?>
