@@ -273,9 +273,10 @@ a img.aligncenter {
 
 /* Post entry */
 .post .entry {
-	font: 11pt "Trebuchet MS", sans-serif;
+	font: 9pt "Trebuchet MS", sans-serif;
 	color: #CCC;
 	letter-spacing: 0.12em;
+	line-height: 16pt;
 }
 
 .post .entry h2 {
