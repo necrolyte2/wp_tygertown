@@ -92,7 +92,7 @@ a {
 
 #blog-name a {
 	text-decoration: none;
-	color: inherit;
+	color: #AAA;
 }
 
 #blog-description {
@@ -337,6 +337,10 @@ a img.aligncenter {
 .sidebar-right {
 	float: right;
 	width: 24%;
+}
+
+.sidebar-right a {
+	color: #CCC;
 }
 
 .sidebar-right li {

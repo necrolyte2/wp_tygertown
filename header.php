@@ -21,7 +21,7 @@
 		<div id="page" class="">
 			<div id="header" class="contentBackground">
 				<div id="header-left">
-					<a href='<?php bloginfo( 'url' ); ?>'><canvas id="header-image" width='100px' height='100px'></canvas></a>
+					<a href='<?php bloginfo( 'url' ); ?>'><canvas id="header-image" width='100px' height='100px'><img src="<?php bloginfo( "template_url" ); ?>/images/Me.png" id="header-image"></canvas></a>
 					<script type="text/javascript">  
 							var canvas = document.getElementById("header-image");
 							var context = canvas.getContext("2d");
