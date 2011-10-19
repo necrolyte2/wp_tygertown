@@ -236,6 +236,8 @@ a img.aligncenter {
 #posts {
 	width: 75%;
 	float: left;
+	padding: 0px;
+	margin: 0px;
 }
 
 /* Post Title */
@@ -329,6 +331,8 @@ a img.aligncenter {
 	-webkit-margin-after: 0px;
 	-webkit-margin-before: 0px;
 	-webkit-padding-start: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 .sidebar-right {
 	float: right;
