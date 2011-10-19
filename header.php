@@ -20,7 +20,41 @@
 		<div id="page" class="">
 			<div id="header" class="contentBackground">
 				<div id="header-left">
-					<a href='<?php bloginfo( 'url' ); ?>'><img src="<?php bloginfo( "template_url" ); ?>/images/Me.png" id="header-image"></a>
+					<a href='<?php bloginfo( 'url' ); ?>'><canvas id="header-image" width='100px' height='100px'></canvas></a>
+					<script type="text/javascript">  
+							var canvas = document.getElementById("header-image");
+							var context = canvas.getContext("2d");
+						 
+							var cornerRadius = 25;
+						 
+							context.beginPath();
+							context.moveTo( cornerRadius, 0 );
+
+							/* Top and Right Corner */
+							context.lineTo( canvas.width - cornerRadius, 0 );
+							context.arcTo( canvas.width, 0, canvas.width, cornerRadius, cornerRadius );
+
+							/* Right and Right Bottom Corner */
+							context.lineTo( canvas.width, canvas.height - cornerRadius );
+							context.arcTo( canvas.width, canvas.height, canvas.width - cornerRadius, canvas.height, cornerRadius );
+
+							/* Bottom and Left Corner */
+							context.lineTo( cornerRadius, canvas.height );
+							context.arcTo( 0, canvas.height, 0, canvas.height - cornerRadius, cornerRadius );
+
+							/* Top and Left */
+							context.lineTo( 0, cornerRadius );
+							context.arcTo( 0, 0, cornerRadius, 0, cornerRadius );
+
+						 
+							context.clip();
+
+							var img = new Image();
+							img.addEventListener('load', function(e) {
+								context.drawImage( img, 0, 0, 100, 100 );
+							}, true );
+							img.src = "<?= gPlusPic() ?>";
+					</script>
 				</div>
 				<div id="header-middle">
 					<div id="header-text">

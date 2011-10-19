@@ -1,4 +1,6 @@
 <?php
+require_once 'google-api-php-client/src/apiClient.php';
+require_once 'google-api-php-client/src/contrib/apiPlusService.php';
 
 /* Callback function to generate a comment */
 function mytheme_comment($comment, $args, $depth) {
@@ -27,8 +29,22 @@ function mytheme_comment($comment, $args, $depth) {
      </div>
 <?php
         }
-?>
-<?php
+
 if ( function_exists('register_sidebar') )
     register_sidebar();
+
+function gPlusProfile( ) {
+	$client = new apiClient();
+	$client->setDeveloperKey('AIzaSyAXRmcQIvqYQpd_jDtJBGKlsUg3qRdXgS4');
+	$client->setAuthClass('apiAuthNone');
+	$plus = new apiPlusService($client);
+	$client->authenticate();
+
+	return $plus->people->get( '103203488152334135508' );
+}
+
+function gPlusPic() {
+	$profile = gPlusProfile();
+	return $profile['image']['url'];
+}
 ?>
