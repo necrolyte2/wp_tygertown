@@ -66,7 +66,7 @@
 				<div id="header-right">
 					<div id="social-images">
 						<div id="findme-text">
-							Also you can find me at:
+							You can also find me at:
 						</div>
 						<a href='http://www.google.com/profiles/vallardt'><img src="<?php bloginfo( "template_url" ); ?>/images/gplus.png" width="32px" height="32px"></a>
 						<a href='http://www.facebook.com/Montanimal'><img src="<?php bloginfo( "template_url" ); ?>/images/facebook.png" width="32px" height="32px"></a>
