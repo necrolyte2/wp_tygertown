@@ -71,6 +71,7 @@
 						<a href='http://www.google.com/profiles/vallardt'><img src="<?php bloginfo( "template_url" ); ?>/images/gplus.png" width="32px" height="32px"></a>
 						<a href='http://www.facebook.com/Montanimal'><img src="<?php bloginfo( "template_url" ); ?>/images/facebook.png" width="32px" height="32px"></a>
 						<a href='https://github.com/necrolyte2'><img src="<?php bloginfo( "template_url" ); ?>/images/github.png" width="32px" height="32px"></a>
+						<a href='http://stackoverflow.com/users/582569/necrolyte2'><img src="<?php bloginfo( "template_url" ); ?>/images/stackoverflow.png" width="32px" height="32px"></a>
 						<a href='http://twitter.com/#!/necrolyte2'><img src="<?php bloginfo( "template_url" ); ?>/images/twitter.png" width="32px" height="32px"></a>
 						<a href='http://www.linkedin.com/profile/view?id=33444318&locale=en_US'><img src="<?php bloginfo( "template_url" ); ?>/images/linkedin.png" width="32px" height="32px"></a>
 						<a href='http://picasaweb.google.com/vallardt'><img src="<?php bloginfo( "template_url" ); ?>/images/picasa.png" width="32px" height="32px"></a>
