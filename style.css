@@ -19,7 +19,7 @@ html {
 	width: 100%;
 }
 body{ 
-	font: 9pt "Trebuchet MS", sans-serif;
+	font: 10pt "Trebuchet MS", sans-serif;
 	height: 90%;
 	width: 99%;
 	color: #CCC;
@@ -277,10 +277,10 @@ a img.aligncenter {
 
 /* Post entry */
 .post .entry {
-	font: 9pt "Trebuchet MS", sans-serif;
+	font: 10pt "Trebuchet MS", sans-serif;
 	color: #CCC;
-	letter-spacing: 0.12em;
-	line-height: 16pt;
+	letter-spacing: 0.1em;
+	line-height: 14pt;
 }
 
 .post .entry h2 {
