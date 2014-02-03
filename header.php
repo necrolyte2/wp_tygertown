@@ -14,6 +14,7 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 		<?php wp_head(); ?>
 	</head>
