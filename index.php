@@ -35,7 +35,25 @@
 			</div>
 
 		<?php endwhile; ?>
+
+        <div class='navigation'>
+            <?php
+                if( is_single() ) {
+            ?>
+                    <span style='margin-right: 30px'><?php previous_post('&laquo;&laquo; %', '', 'yes'); ?></span>
+                    ------
+                    <span style='margin-left: 30px'><?php next_post('% &raquo;&raquo;', '', 'yes'); ?></span>
+            <?php
+                } else {
+            ?>
+                    <span><?php posts_nav_link(); ?></span>
+            <?php
+                }
+            ?>
+        </div>
+
 		</div>
+
 
 		<?php get_sidebar( ); ?>
 

@@ -54,6 +54,19 @@ a {
 #content {
 }
 
+/* Next and previous navigation links */
+.navigation {
+    text-align: center;
+    background-color: #222;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 #header {
 	height: 100px;
 	margin-bottom: 10px;
