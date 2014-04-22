@@ -372,3 +372,12 @@ a img.aligncenter {
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 }
+
+/* = Pre/Code block stuff */
+pre {
+    background-color: black;
+    color: greenyellow;
+    margin-left: 15px;
+    margin-right: 150px;
+    padding: 5px 10px 5px 10px;
+}
