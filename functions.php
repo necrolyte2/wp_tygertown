@@ -43,8 +43,9 @@ function gPlusProfile( ) {
 	return $plus->people->get( '103203488152334135508' );
 }
 
-function gPlusPic() {
+function gPlusPic( $size = 200 ) {
 	$profile = gPlusProfile();
-	return $profile['image']['url'];
+	$url = $profile['image']['url'];
+    return str_replace( "sz=50", "sz=$size", $url );
 }
 ?>
